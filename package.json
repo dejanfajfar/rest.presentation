@@ -1,0 +1,32 @@
+{
+  "name": "rest.presentation",
+  "version": "0.0.1",
+  "description": "Introductional presentation to REST",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dejanfajfar/rest.presentation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dejanfajfar/rest.presentation/issues"
+  },
+  "homepage": "https://github.com/dejanfajfar/rest.presentation#readme",
+  "dependencies": {},
+  "devDependencies": {},
+  "jspm": {
+    "dependencies": {
+      "css": "github:systemjs/plugin-css@^0.1.19",
+      "reveal.js": "npm:reveal.js@^3.1.0"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}
