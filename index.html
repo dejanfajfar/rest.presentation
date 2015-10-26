@@ -9,7 +9,7 @@
         System.import('reveal.js/css/reveal.css!').then(function(){
             System.import('/styles/theme.css!');
         });
-        System.import('lib/presentation.js');
+        System.import('presentation.js');
     </script>
 </head>
 <body>
@@ -20,8 +20,24 @@
                 <h2>An introduction</h2>
             </section>
             <section>
-                <section>Vertical Slide 1</section>
-                <section>Vertical Slide 2</section>
+                <section>
+                    <h1>Definition</h1>
+                </section>
+                <section data-markdown="/markdown/rest_definition.md"
+                         data-separator="^\n\n\n"
+                         data-separator-vertical="^\n\n"
+                         data-separator-notes="^Note:"
+                         data-charset="utf8"></section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Page title
+
+                        A paragraph with some text and a [link](http://hakim.se).
+                    </script>
+                </section>
+            </section>
+            <section>
+
             </section>
         </div>
     </div>
