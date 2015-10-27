@@ -1,5 +1,11 @@
-REST _(REpresentational State Transfer)_ is an architectural style, and an approach to communications that is often used
- in the development of Web services. The use of REST is often preferred over the more heavyweight *SOAP* 
- (Simple Object Access Protocol) style because REST does not leverage as much bandwidth, which makes it a *better fit* 
- for use over the Internet. The SOAP approach requires writing or using a provided server program (to serve data) and 
- a client program (to request data).
+_REST_ stands for __Re__presentational __S__tate __T__ransfer (sometimes spelled "ReST".). It relies on a 
+ * stateless 
+ * client-server 
+ * cacheable 
+ 
+communications protocol -- and in virtually all cases, the HTTP protocol is used.
+
+---
+
+REST is an architecture style for designing networked applications. The idea is that, rather than using complex 
+mechanisms such as CORBA, RPC or SOAP to connect between machines, simple HTTP is used to make calls between machines.

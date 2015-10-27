@@ -21,6 +21,7 @@
   "jspm": {
     "dependencies": {
       "css": "github:systemjs/plugin-css@^0.1.19",
+      "prism": "github:PrismJS/prism@^1.2.0",
       "reveal.js": "npm:reveal.js@^3.1.0"
     },
     "devDependencies": {

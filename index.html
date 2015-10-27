@@ -6,9 +6,7 @@
     <script src="jspm_packages/system.js"></script>
     <script src="config.js"></script>
     <script>
-        System.import('reveal.js/css/reveal.css!').then(function(){
-            System.import('/styles/theme.css!');
-        });
+
         System.import('presentation.js');
     </script>
 </head>
@@ -20,24 +18,67 @@
                 <h2>An introduction</h2>
             </section>
             <section>
+                <img class="stretch" data-src="http://geekandpoke.typepad.com/photos/uncategorized/2007/06/10/rest3.jpg" alt="geek and poke soa"/>
+            </section>
+            <section>
                 <section>
                     <h1>Definition</h1>
                 </section>
                 <section data-markdown="/markdown/rest_definition.md"
-                         data-separator="^\n\n\n"
+                         data-separator="---"
                          data-separator-vertical="^\n\n"
                          data-separator-notes="^Note:"
                          data-charset="utf8"></section>
-                <section data-markdown>
-                    <script type="text/template">
-                        ## Page title
-
-                        A paragraph with some text and a [link](http://hakim.se).
-                    </script>
+            </section>
+            <section>
+                <section>
+                    <h1>REST vs Soap</h1>
+                </section>
+                <section>
+                    <h2>P1: SOAP</h2>
+                </section>
+                <section>
+                    <pre class="line-numbers language-xml">
+                        <code>&lt;?xml version="1.0"?&gt;
+&lt;soap:Envelope
+    xmlns:soap="http://www.w3.org/2001/12/soap-envelope"
+    soap:encodingStyle="http://www.w3.org/2001/12/soap-encoding"&gt;
+    &lt;soap:body pb="http://www.myapp.com/api"&gt;
+        &lt;pb:GetUserDetails&gt;
+            &lt;pb:UserID&gt;12345&lt;/pb:UserID&gt;
+        &lt;/pb:GetUserDetails&gt;
+    &lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;</code>
+                    </pre>
+                </section>
+                <section data-markdown="/markdown/soap.md"
+                        data-separator="---"
+                        data-separator-vertical="^\n\n"
+                        data-separator-notes="^Note:"
+                        data-charset="utf8"></section>
+                <section>
+                    <h2>P2: REST</h2>
+                </section>
+                <section>
+                    <pre class="line-numbers">
+                        <code class="language-http">GET https://www.myapp.com/api/users/12345</code>
+                    </pre>
                 </section>
             </section>
             <section>
-
+                <section>
+                    <h1>Service response</h1>
+                </section>
+                <section>
+                    <pre>
+                        <code class="language-javascript">{
+    "userName": "John",
+    "firtsName" : "John",
+    "lastName" : "Doeh",
+    "age": 35
+}</code>
+                    </pre>
+                </section>
             </section>
         </div>
     </div>

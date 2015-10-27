@@ -18,6 +18,7 @@ System.config({
     "babel-runtime": "npm:babel-runtime@5.8.25",
     "core-js": "npm:core-js@1.2.2",
     "css": "github:systemjs/plugin-css@0.1.19",
+    "prism": "github:PrismJS/prism@1.2.0",
     "reveal.js": "npm:reveal.js@3.1.0",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
