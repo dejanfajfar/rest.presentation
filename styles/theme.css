@@ -264,14 +264,14 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-    color: #42affa;
+    color: #7E8F4F;
     text-decoration: none;
     -webkit-transition: color 0.15s ease;
     -moz-transition: color 0.15s ease;
     transition: color 0.15s ease; }
 
 .reveal a:hover {
-    color: #8dcffc;
+    color: #C2CF9F;
     text-shadow: none;
     border: none; }
 
@@ -307,31 +307,31 @@ body {
  *********************************************/
 .reveal .controls .navigate-left,
 .reveal .controls .navigate-left.enabled {
-    border-right-color: #42affa; }
+    border-right-color: #68537B; }
 
 .reveal .controls .navigate-right,
 .reveal .controls .navigate-right.enabled {
-    border-left-color: #42affa; }
+    border-left-color: #68537B; }
 
 .reveal .controls .navigate-up,
 .reveal .controls .navigate-up.enabled {
-    border-bottom-color: #42affa; }
+    border-bottom-color: #68537B; }
 
 .reveal .controls .navigate-down,
 .reveal .controls .navigate-down.enabled {
-    border-top-color: #42affa; }
+    border-top-color: #68537B; }
 
 .reveal .controls .navigate-left.enabled:hover {
-    border-right-color: #8dcffc; }
+    border-right-color:  #847393; }
 
 .reveal .controls .navigate-right.enabled:hover {
-    border-left-color: #8dcffc; }
+    border-left-color:  #847393; }
 
 .reveal .controls .navigate-up.enabled:hover {
-    border-bottom-color: #8dcffc; }
+    border-bottom-color:  #847393; }
 
 .reveal .controls .navigate-down.enabled:hover {
-    border-top-color: #8dcffc; }
+    border-top-color:  #847393; }
 
 /*********************************************
  * PROGRESS BAR
