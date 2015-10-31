@@ -20,7 +20,7 @@ mechanisms such as CORBA, RPC or SOAP to connect between machines, _simple HTTP_
 
 ---
 
-![Resource model](http://restful-api-design.readthedocs.org/en/latest/_images/concepts.png) <!-- .element: class="stretch" -->
+![Resource model](/images/resource_vs_collection.png) <!-- .element: class="stretch" -->
 
 ---
 
