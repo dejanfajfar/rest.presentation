@@ -81,12 +81,73 @@
                         data-separator-notes="^Note:"
                         data-charset="utf8"></section>
                 <section>
+                    <pre class="line-numbers language-xml">
+                        <code>&lt;?xml version="1.0"?&gt;
+&lt;soap:Envelope
+    xmlns:soap="http://www.w3.org/2001/12/soap-envelope"
+    soap:encodingStyle="http://www.w3.org/2001/12/soap-encoding"&gt;
+        &lt;soap:body pb="http://www.myapp.com/api"&gt;
+            &lt;pb:GetUserDetailsResponse&gt;
+                &lt;pb:UserID&gt;12345&lt;/pb:UserID&gt;
+                &lt;pb:UserName&gt;John44&lt;/pb:UserName&gt;
+                &lt;pb:FirstName&gt;John&lt;/pb:FirstName&gt;
+                &lt;pb:LastName&gt;Doh&lt;/pb:LastName&gt;
+                &lt;pb:Balance&gt;12.424,23&lt;/pb:Balance&gt;
+        &lt;/pb:GetUserDetails&gt;
+    &lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;</code>
+                    </pre>
+                </section>
+                <section>
                     <h2>P2: REST</h2>
                 </section>
                 <section>
                     <pre class="line-numbers">
                         <code class="language-http">GET https://www.myapp.com/api/users/12345</code>
                     </pre>
+                </section>
+                <section>
+                    <pre>
+                        <code class="language-javascript">{
+    "userName": "John",
+    "firtsName" : "John",
+    "lastName" : "Doeh",
+    "balance": 123.234,23
+}</code>
+                        </pre>
+                </section>
+                <section>
+                    <pre class="line-numbers">
+                        <code class="language-xml">&lt;?xml version="1.0"?&gt;
+&lt;UserDataResponse&gt;
+    &lt;UserDataResponse&gt;
+        &lt;pb:UserID&gt;12345&lt;/pb:UserID&gt;
+        &lt;pb:UserName&gt;John44&lt;/pb:UserName&gt;
+        &lt;pb:FirstName&gt;John&lt;/pb:FirstName&gt;
+        &lt;pb:LastName&gt;Doh&lt;/pb:LastName&gt;
+        &lt;pb:Balance&gt;12.424,23&lt;/pb:Balance&gt;
+    &lt;/UserDataResponse&gt;
+&lt;/UserDataResponse&gt;
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <pre class="line-numbers">
+                        <code class="language-xml">&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Property&lt;/th&gt;
+        &lt;th&gt;Value&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+        ...
+    &lt;/tr&gt;
+&lt;/table&gt;
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <img class="stretch" data-src="/images/cat.jpg" alt="cat"/>
                 </section>
             </section>
             <section>
