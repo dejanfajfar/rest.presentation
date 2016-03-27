@@ -3,7 +3,7 @@ import marked from 'reveal.js/plugin/markdown/marked.js'
 import markdown from 'reveal.js/plugin/markdown/markdown.js'
 
 System.import('reveal.js/css/reveal.css!').then(function(){
-    System.import('/styles/theme.css!');
+    System.import('./styles/theme.css!');
 });
 System.import('prism/themes/prism.css!').then(function(){
     System.import('prism/themes/prism-twilight.css!');
